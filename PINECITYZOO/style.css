@@ -1,0 +1,215 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Helvetica;
+}
+
+/*************************** HEADER ************************/
+
+#header{
+    position: fixed; /*the header wont move*/
+    top:0px;
+    left:0px;
+    z-index: 500; /*top most on the screen, overlay everything*/
+    width: 100%; 
+    height: 80px;
+    background-image: url(images/wood-bg.png);
+    background-repeat: repeat-x;
+}
+
+#header img{
+    display: block; 
+    margin: auto; /*smart way to centralize with the header, flexible with the page*/
+    height: 70%;
+    padding-top: 15px;
+
+}
+
+/*************************** TOP-TABS ************************/
+#tabs-top{
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: burlywood;
+}
+
+#tabs-top a{
+    float: left; 
+    display: block; 
+    width: 33%;
+    height: 35px;
+    font-weight: 800;
+    color: darkgreen;
+    text-align: center;
+    text-decoration: none; /*To remove the underline*/
+    padding-top: 9px;
+}
+
+/*************************** HOME PAGE ************************/
+
+#home-page{
+    margin-top: 120px; /*height of header + tabs-top sets the main img below the tabs*/   
+}
+
+
+/*************************** BOTTOM-TABS ************************/
+
+#tabs-bottom{
+    position:fixed;
+    bottom: 0; /*stuck at the bottom*/
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: greenyellow
+   
+} 
+
+#tabs-bottom a{
+    float: left; 
+    display: block; 
+    width: 50%;
+    height: 35px;
+    font-weight: 900;
+    color: darkgreen;
+    text-align: center;
+    text-decoration: none; /*To remove the underline*/
+    padding-top: none;
+}
+
+/*************************** ANIMALS ************************/
+
+#main-animals{
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat-y; /*image to repeat itself vertically*/
+    background-repeat: repeat-x;
+}
+
+#content-animals{
+    padding-top: 1px;
+    padding-bottom: 50px;
+    padding: 50px;
+    background: rgba(252, 225, 225, 0.8) ; 
+    margin: auto;
+
+}
+
+/*************************** INFO BOX ************************/
+
+a.info-box{
+    text-decoration: none;
+    background: rgba(252, 225, 225, 0.8) ; /*transparent colour*/
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto; /*centralize*/
+    margin-top: 12px;
+    padding: 1px;
+    background-repeat: repeat-y;
+
+}
+
+.info-box img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: brown;
+}
+
+.info-box p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: darkslategrey;
+}
+/*image within "info-box with a call name 'right'"*/
+.info-box img.right{
+    float: right;  
+}
+
+/******************************************INFO BOX FULL****************************************/
+
+#infobox-full{
+    background-color: rgba(255,255,255,0.5);
+    width: 90%;
+    margin: auto; /*to center an item */
+    margin-top: 12px;
+    display: block;
+    padding: 10px
+}
+
+#infobox-full h2{
+    color: rgb(29, 29, 25); 
+    text-align: center;
+    font-weight: 800;
+}
+
+#infobox-full img{
+    width: 50%;
+    padding-left: 350px;
+    
+}
+/*************************WEATHER**************************/
+img.info-box-weather-icon{
+     height: 50px;
+     width: 50px;
+    margin: 10px;
+    float: left;
+}
+
+h1.info-box-weather-icon{
+     font-size  : 55px;
+     font-weight: 200;
+     padding    : 0;
+     margin     : 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-top: 1px solid green;
+}
+
+/********************FORM***********************************/
+
+input{
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;
+    border: 1px solid green;
+}
+
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1px solid green;
+}
+
+.button{
+      display : block;
+      background-color: forestgreen;
+      text-decoration : none;
+      text-align  : center;
+      color       : white;
+      font-size   : 16px;
+      font-weight : 600;
+      margin : 12px 0;
+      padding : 8px 0;
+}
+
+
+
+
